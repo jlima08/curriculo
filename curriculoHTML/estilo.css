@@ -1,7 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 *{
     padding: 0;
     margin: 0;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: "Roboto", sans-serif;
 }
 
 header{
@@ -11,6 +12,9 @@ header{
     background-color: #521313;
     color: #fff;
     
+}
+a{
+    text-decoration: none;
 }
 
 header .nome{
@@ -42,15 +46,27 @@ main{
 main h2{
     color: #521313;
     text-align: center;
+    width: 100%;
+    background-color: #521313;
+    color: #fff;
+    padding: 8px;
 }
 
 main ul{
-    padding: 22px;
+    padding: 30px;
 }
 
 main section{
-    padding: 22px;
-    border-bottom: 1px solid #521313;
+    padding: 15px;
+    /* border-bottom: 1px solid #521313; */
+}
+
+.ctts{
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    padding: 0px !important;
+   
 }
 
 main .contatos{
@@ -148,7 +164,11 @@ footer{
     }
 
 }
-
+@media screen and (max-width: 800px){
+    .ctts{
+        font-size: 13px;
+    }
+}
 @media screen and (max-width: 500px){
 
     header{
@@ -176,6 +196,11 @@ footer{
     .steps{
     width: 100%;
     font-size: 13px;
+    }
+
+    .ctts{
+        flex-direction: column;
+        justify-content: center;
     }
 
     @keyframes steps{
